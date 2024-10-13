@@ -2,5 +2,24 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 <BaseLayout>
-<h1>Site under construction</h1>
+<div class="title">
+    <h1>Site under construction</h1>
+    <div class="img-icon">
+<img src="/src/images/favicon.svg">
+    </div>
+</div>
 </BaseLayout>
+
+<style>
+.title{
+display: grid;
+justify-content: center;
+height: 100svh;
+grid-template-rows: 2fr 1fr;
+}
+.img-icon img{
+    height: 150px;
+}
+
+
+</style>
